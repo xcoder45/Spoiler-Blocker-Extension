@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Spoiler Blocker",
+    "version": "1.0",
+    "description": "Blocks spoilers and replaces them with cat pictures.",
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png"
+      }
+    }
+  }
+  
